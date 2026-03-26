@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPortfolio — Mahasiswa Informatika</title>
+    <link rel="shortcut icon" href="./src/img/pavicon.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- type.js -->
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar-custom">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <a class="navbar-brand-text text-decoration-none" href="#">
+                    &lt;<span>Iqbal</span>/&gt;
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="d-none d-md-flex align-items-center gap-1">
+                    <a href="#home" class="nav-link-custom">Home</a>
+                    <a href="#about" class="nav-link-custom">About</a>
+                    <a href="#skills" class="nav-link-custom">Skills</a>
+                    <a href="#projects" class="nav-link-custom">Projects</a>
+                    <a href="#experience" class="nav-link-custom">Experience</a>
+                    <a href="#contact" class="nav-link-custom">Contact</a>
+                </div>
+
+                <!-- Mobile Toggler -->
+                <button class="navbar-toggler d-md-none" type="button" id="mobileToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="d-md-none" id="mobileMenu" style="display:none!important; padding: .75rem 0;">
+                <a href="#home" class="nav-link-custom d-block py-2">Home</a>
+                <a href="#about" class="nav-link-custom d-block py-2">About</a>
+                <a href="#skills" class="nav-link-custom d-block py-2">Skills</a>
+                <a href="#projects" class="nav-link-custom d-block py-2">Projects</a>
+                <a href="#experience" class="nav-link-custom d-block py-2">Experience</a>
+                <a href="#contact" class="nav-link-custom d-block py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <div class="hero-glow2"></div>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left -->
+                <div class="col-lg-6">
+                    <p class="hero-eyebrow">I'am <span class="typing"></span></p>
+                    <h1 class="hero-title">
+                        Halo, Saya
+                        <span class="accent">Moh. Iqbal Rasuli</span>
+                    </h1>
+                    <p class="hero-sub d-none d-md-block">
+                        Membangun solusi digital dengan kode yang bersih dan desain yang bermakna.
+                        Fokus pada <strong>Web Development</strong>, <strong>UI/UX Design</strong>, dan <strong>Mobile
+                            Development</strong>.
+                    </p>
+
+                    <div class="badge-stack my-4">
+                        <span class="tech-badge"><i class="bi bi-code-slash me-1"></i>Laravel</span>
+                        <span class="tech-badge"><i class="bi bi-braces me-1"></i>JavaScript</span>
+                        <span class="tech-badge"><i class="bi bi-cpu me-1"></i>PHP</span>
+                        <span class="tech-badge"><i class="bi bi-database me-1"></i>SQL</span>
+                        <span class="tech-badge"><i class="bi bi-git me-1"></i>Git</span>
+                        <span class="tech-badge"><i class="bi bi-cloud me-1"></i>Laravel API</span>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <a href="#projects" class="btn-cta">Lihat Proyek</a>
+                        <a href="#contact" class="btn-cta-outline">Kontak Saya</a>
+                    </div>
+                </div>
+
+                <!-- Right: Terminal -->
+                <div class="col-lg-6 d-none d-md-block">
+                    <div class="terminal-card">
+                        <div class="terminal-bar">
+                            <div class="dot dot-r"></div>
+                            <div class="dot dot-y"></div>
+                            <div class="dot dot-g"></div>
+                            <span class="terminal-title">iqbal@dev ~ zsh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div><span class="t-prompt">iqbal@dev</span> <span class="t-cmd">cat profile.json</span>
+                            </div>
+                            <div class="mt-2">
+                                <span class="t-comment">{</span><br>
+                                &nbsp;&nbsp;<span class="t-key">"nama"</span>: <span class="t-string">"Moh. Iqbal
+                                    Rasuli"</span>,<br>
+                                &nbsp;&nbsp;<span class="t-key">"universitas"</span>: <span
+                                    class="t-string">"Universitas KH. Bahaudin Mudhary Madura"</span>,<br>
+                                &nbsp;&nbsp;<span class="t-key">"jurusan"</span>: <span class="t-string">"Teknik
+                                    Informatika"</span>,<br>
+                                &nbsp;&nbsp;<span class="t-key">"angkatan"</span>: <span
+                                    class="t-string">"2023"</span>,<br>
+                                &nbsp;&nbsp;<span class="t-key">"ipk"</span>: <span class="t-string">3.87</span>,<br>
+                                &nbsp;&nbsp;<span class="t-key">"minat"</span>: [<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"Web Dev"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"UI/UX Design"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"Mobile Dev</span><br>
+                                &nbsp;&nbsp;],<br>
+                                &nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-string">"Open to
+                                    Opportunity"</span><br>
+                                <span class="t-comment">}</span>
+                            </div>
+                            <div class="mt-3"><span class="t-prompt">iqbal@dev</span> <span class="cursor"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 animate-on-scroll">
+                    <p class="section-label">Tentang Saya</p>
+                    <h2 class="section-title">Siapa Saya?</h2>
+                    <div class="section-line"></div>
+                    <p class="about-text mb-4">
+                        Saya adalah mahasiswa semester 6 di Teknik Informatika Uniba Madura yang sangat antusias dengan dunia
+                        teknologi.
+                        Saya percaya bahwa kode yang baik bukan hanya yang berfungsi — tetapi yang juga elegan, efisien,
+                        dan mampu memberi dampak nyata bagi pengguna.
+                    </p>
+                    <p class="about-text mb-4">
+                        Sehari-hari saya belajar, membangun proyek, mengikuti kompetisi, dan berkontribusi pada
+                        komunitas open-source. Saya selalu lapar untuk belajar teknologi baru dan menerapkannya
+                        dalam solusi yang nyata.
+                    </p>
+
+                    <ul class="info-list mt-4">
+                        <li><span class="lbl">Lokasi</span> <span class="val">Sumenep, Jawa Timur</span></li>
+                        <li><span class="lbl">Semester</span> <span class="val">6 (Angkatan 2023)</span></li>
+                        <li><span class="lbl">Bahasa</span> <span class="val">Indonesia</span>
+                        </li>
+                        <li><span class="lbl">Email</span> <span class="val"
+                                style="color:var(--cyan)">mohiqbalrasuli@gmail.com</span></li>
+                        <li><span class="lbl">Status</span> <span class="val" style="color:var(--green)">● Open to
+                                Internship</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 animate-on-scroll">
+                    <div class="row g-4">
+                        <img src="./src/img/iqbal-no-bg.png" class="img-fade-bottom" alt="foto Iqbal" width="300px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <p class="section-label">Kemampuan</p>
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Skill cards -->
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(0,229,255,.1); color:var(--cyan)"><i
+                                class="bi bi-braces"></i></div>
+                        <div class="skill-name">Frontend</div>
+                        <div class="skill-desc">HTML, CSS, JavaScript, React.js, vue.js, Bootstrap, Tailwind</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(57,255,110,.1); color:var(--green)"><i
+                                class="bi bi-server"></i></div>
+                        <div class="skill-name">Backend</div>
+                        <div class="skill-desc">Node.js, Laravel, REST API</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:72%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(168,85,247,.1); color:var(--purple)"><i
+                                class="bi bi-cpu-fill"></i></div>
+                        <div class="skill-name">UI / UX Design</div>
+                        <div class="skill-desc">Figma</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:65%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(0,229,255,.1); color:var(--cyan)"><i
+                                class="bi bi-database-fill"></i></div>
+                        <div class="skill-name">Database</div>
+                        <div class="skill-desc">MySQL, MongoDB, SQLite</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(57,255,110,.1); color:var(--green)"><i
+                                class="bi bi-git"></i></div>
+                        <div class="skill-name">DevOps & Tools</div>
+                        <div class="skill-desc">Git, GitHub, VS Code</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:68%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(0,229,255,.1); color:var(--cyan)"><i
+                                class="bi bi-cloud-fill"></i></div>
+                        <div class="skill-name">Cloud</div>
+                        <div class="skill-desc">Google Cloud, Vercel, Netlify</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:55%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 animate-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background:rgba(57,255,110,.1); color:var(--green)"><i
+                                class="bi bi-phone-fill"></i></div>
+                        <div class="skill-name">Mobile</div>
+                        <div class="skill-desc">React Native, Flutter (dasar), Android Studio</div>
+                        <div class="progress-custom">
+                            <div class="progress-fill" style="width:45%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <p class="section-label">Portofolio</p>
+                <h2 class="section-title">Proyek Selesai</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="project-card">
+                        <div class="project-num">// 01</div>
+                        <h3 class="project-title">Company Profile MDT ULA Al-Barokah</h3>
+                        <p class="project-desc">Lembaga pendidikan keislaman yang membentuk akhlak mulia serta
+                            meningkatkan pemahaman ilmu agama melalui sistem pembelajaran terstruktur dan efektif.</p>
+                        <div class="tag-list">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Java Script</span>
+                            <span class="tag">Bootstrap 5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link"><i class="bi bi-github"></i> GitHub</a>
+                            <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="project-card">
+                        <div class="project-num">// 02</div>
+                        <h3 class="project-title">Sistem PMB MDT Al-Barokah</h3>
+                        <p class="project-desc">Sistem Penerimaan Murid Baru MDT Al-Barokah berbasis digital yang
+                            mempermudah proses pendaftaran, pengelolaan data calon santri, serta meningkatkan efisiensi
+                            dan akurasi administrasi secara terstruktur dan terintegrasi.</p>
+                        <div class="tag-list">
+                            <span class="tag">java Script</span>
+                            <span class="tag">App Script</span>
+                            <span class="tag">Spretsheet</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link"><i class="bi bi-github"></i> GitHub</a>
+                            <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="project-card">
+                        <div class="project-num">// 03</div>
+                        <h3 class="project-title">Sistem Laporan UGT PP Al-Usymuni</h3>
+                        <p class="project-desc">Sistem laporan UGT PP Al-Usymuni berbasis digital yang mempermudah laporan guru tugas dan penanggung jawab guru tugas kegiatan secara terstruktur, akurat, dan efisien.</p>
+                        <div class="tag-list">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Mysql</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link"><i class="bi bi-github"></i> GitHub</a>
+                            <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE / TIMELINE ========== -->
+    <section class="timeline-section" id="experience">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 animate-on-scroll">
+                    <p class="section-label">Pengalaman</p>
+                    <h2 class="section-title">Riwayat</h2>
+                    <div class="section-line"></div>
+
+                    <div class="timeline mt-4">
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-date">Januari 2026 — Februari 2026</div>
+                            <div class="tl-title">Internship</div>
+                            <div class="tl-place">BPBD Sumenep</div>
+                            <div class="tl-desc">Membangun Sistem Informasi Company Profile BPBD Sumenep</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-date">2025 — Sekarang</div>
+                            <div class="tl-title">Wakil Ketua</div>
+                            <div class="tl-place">Himatif Uniba Madura</div>
+                            <div class="tl-desc">Membantu Ketua menjalankan tanggung jawab sebagai ketua umum himatif
+                                uniba madura</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-on-scroll">
+                    <p class="section-label">Pendidikan</p>
+                    <h2 class="section-title">Riwayat</h2>
+                    <div class="section-line"></div>
+
+                    <div class="timeline mt-4">
+                        <div class="tl-item">
+                            <div class="tl-dot" style="background:var(--green); box-shadow:0 0 12px var(--green)"></div>
+                            <div class="tl-date">2023 — Sekarang</div>
+                            <div class="tl-title">S1 Teknik Informatika</div>
+                            <div class="tl-place">Universitas KH. Bahaudin Mudhary Madura — IPK: 3.87</div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-dot" style="background:var(--green); box-shadow:0 0 12px var(--green)"></div>
+                            <div class="tl-date">2020 — 2022</div>
+                            <div class="tl-title">SMAS PLUS MIFTAHUL ULUM</div>
+                            <div class="tl-place">Jl. Pesantren Tarate Pandian Sumenep </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-dot" style="background:var(--green); box-shadow:0 0 12px var(--green)"></div>
+                            <div class="tl-date">2016 — 2019</div>
+                            <div class="tl-title">SMP PLUS MIFTAHUL ULUM</div>
+                            <div class="tl-place">Jl. Pesantren Tarate Pandian Sumenep </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-dot" style="background:var(--green); box-shadow:0 0 12px var(--green)"></div>
+                            <div class="tl-date">2010-2016</div>
+                            <div class="tl-title">SDN Batuputih Laok II</div>
+                            <div class="tl-place">Jl. Arya Wiraraja No. 52 Batuputih Laok Batuputih Sumenep </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <p class="section-label">Hubungi Saya</p>
+                <h2 class="section-title">Mari Berkolaborasi</h2>
+                <div class="section-line mx-auto"></div>
+                <p style="color:var(--muted); max-width:480px; margin:0 auto; font-size:.95rem;">
+                    Terbuka untuk kesempatan magang, proyek kolaborasi, atau sekadar ngobrol tentang teknologi.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-7 animate-on-scroll">
+                    <div class="contact-card">
+                        <form class="contact-form" onsubmit="return false;">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label>Nama</label>
+                                    <input type="text" class="form-control" placeholder="Moh. Iqbal Rasuli">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="mohiqbalrasuli@gmail.com">
+                                </div>
+                                <div class="col-12">
+                                    <label>Subjek</label>
+                                    <input type="text" class="form-control" placeholder="Topik pesan kamu">
+                                </div>
+                                <div class="col-12">
+                                    <label>Pesan</label>
+                                    <textarea class="form-control" rows="5"
+                                        placeholder="Hei iqbal, saya ingin..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn-send" onclick="showSent(this)">
+                                        <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 animate-on-scroll">
+                    <div class="contact-card h-100">
+                        <p class="section-label mb-3">Temukan Saya Di</p>
+                        <a href="https://github.com/mohiqbalrasuli" class="social-link"><i class="bi bi-github"></i>
+                            github.com/mohiqbalrasuli</a>
+                        <a href="https://www.linkedin.com/in/moh-iqbal-rosuli-b90b6b389/" class="social-link"><i
+                                class="bi bi-linkedin"></i> linkedin.com/in/mohiqbalrasuli</a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya" class="social-link"><i
+                                class="bi bi-whatsapp"></i> 087852895104</a>
+                        <a href="https://www.instagram.com/m.iqbal.rsl/" class="social-link"><i
+                                class="bi bi-instagram"></i> @m.iqbal.rsl</a>
+                        <a href="mailto:mohiqbalrasuli@gmail.com" class="social-link"><i
+                                class="bi bi-envelope-fill"></i>mohiqbalrasuli@gmail.com</a>
+
+                        <div class="mt-4 pt-3" style="border-top:1px solid var(--border)">
+                            <p
+                                style="font-family:var(--mono); font-size:.72rem; color:var(--muted); margin-bottom:.75rem; letter-spacing:.1em;">
+                                KETERSEDIAAN</p>
+                            <div style="display:flex; align-items:center; gap:.75rem; font-size:.9rem;">
+                                <span
+                                    style="width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:blink 2s step-end infinite;"></span>
+                                <span style="color:var(--green)">Tersedia untuk magang & freelance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <p>Dibangun dengan <span>❤</span> oleh <span>Moh. Iqbal Rasuli</span> · © 2026 · Semua hak dilindungi</p>
+            <p class="mt-1" style="font-size:.65rem;">HTML · CSS · Bootstrap · JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
+
+</body>
+
+</html>
